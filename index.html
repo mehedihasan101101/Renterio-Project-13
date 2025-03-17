@@ -34,8 +34,10 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </div>
-        <ul tabindex="0"
-          class="menu menu-sm dropdown-content rounded-box z-1  w-full flex justify-items-center items-center  p-2 shadow mt-42 ">
+               <!-- i have not used flex inside li because it takes all li center but li does not take full width -->
+        <ul tabindex="0"   
+          class="menu menu-sm dropdown-content rounded-box z-1  w-full p-2 shadow mt-42 ">
+          <!-- in li w-full and inside "a" display block has been to make li take full width and text comes to center -->
           <li class="w-full">
             <a class="text-center block">Home</a>
           </li>
