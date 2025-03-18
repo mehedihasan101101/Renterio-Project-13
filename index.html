@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- flatIcon -->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
   <style>
     .manrope {
       font-family: "Manrope", sans-serif;
@@ -26,34 +27,66 @@
 <body class="manrope">
   <header class="container m-auto">
     <nav>
-      <!-- MOBILE MENU-->
+      <!-- Mobile MENU-->
       <!-- Note: just remove the "flex-row-reverse" to rotate the menu-->
-      <div class="dropdown flex justify-between flex-row-reverse items-center md:mt-4 lg:hidden">
+      <div class="dropdown flex  flex-row-reverse items-center md:mt-4 lg:hidden pl-3 mt-3">
 
-        <div tabindex="0" role="button" class="btn btn-ghost">
+        <div tabindex="0" role="button" class="btn btn-circle h-12 w-12">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </div>
         <!-- i have not used flex inside li because it takes all li center but li does not take full width -->
-        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-1  w-full p-2 shadow mt-42 ">
+        <ul tabindex="0" class="menu bg enu-sm dropdown-content rounded-box z-1  w-full p-2 shadow mt-42 mt-[260px] ">
           <!-- in li w-full and inside "a" display block has been to make li take full width and text comes to center -->
           <li class="w-full">
             <a class="text-center block">Home</a>
           </li>
           <li class="w-full">
-            <a class="text-center block">Home</a>
+            <a class="text-center block">Services</a>
           </li>
           <li class="w-full">
-            <a class="text-center block">Home</a>
+            <a class="text-center block">Portfolio</a>
           </li>
           <li class="w-full">
-            <a class="text-center block">Home</a>
+            <a class="text-center block">Blogs</a>
           </li>
+          </li>
+          <li class="w-full">
+            <a class="text-center block">Contact Us</a>
+          </li>
+          <div class="flex justify-center">
+            <a href=""
+              class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-1  w-[185px] h-[56px] hover:bg-[#a7d675] ">
+              Book Consult
+              <span
+                class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
+                  height="16">
+                  <path fill="#FFFFFF"
+                    d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
         </ul>
-        <div class="flex items-center gap-2">
+        <div class="flex   items-center gap-2  ">
+
+          <button class=" btn btn-circle flex items-center flex-col justify-center  h-12 w-12 ">
+            <i class="fi fi-br-search text-[#737373] text-xl "></i>
+          </button>
+          <button class=" btn btn-circle flex items-center flex-col justify-center h-12 w-12 mr-2">
+            <i class="fi fi-tr-cart-shopping-fast text-xl"></i>
+          </button>
+
+          <!-- book consult button -->
+
+
+        </div>
+        <div class="flex-1 flex items-center gap-2">
           <a
-            class="  btn-circle bg-[#ABEF5F] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center flex-col justify-center">
+            class="  btn-circle bg-[#ABEF5F] drop-shadow-none  border-0 w-[38px] h-[38px] flex items-center flex-col justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
               height="16">
               <path
@@ -61,15 +94,12 @@
             </svg>
           </a>
 
-          <a class="text-xl lg:inline text-[40px] font-xl pl-0 font-extrabold">
+          <a class="text-xl  text-[40px] font-xl pl-0 font-extrabold">
             Rinterio</a>
         </div>
-        <!-- <div class="lg:hidden">
-              <a class="btn  p-6 bg-[#E76F51]  p-6 text-white text-[15px]">Login</a>
-            </div> -->
       </div>
       <!-- PC MENU-->
-      <div class="navbar bg-base-100 justify-between hidden lg:block lg:flex">
+      <div class="navbar bg-base-100 justify-between hidden lg:block lg:flex lg:mt-5">
         <!-- Part 1 -->
         <div class="flex items-center gap-2 ">
           <a
@@ -99,23 +129,26 @@
         <div class="flex   items-center gap-2  ">
 
           <button class=" btn btn-circle flex items-center flex-col justify-center  p-6 ">
-            <i class="fi fi-tr-cart-shopping-fast text-xl"></i>
+            <i class="fi fi-br-search text-xl text-[#737373]"></i>
           </button>
           <button class=" btn btn-circle flex items-center flex-col justify-center  p-6 ">
-            <i class="fi fi-tr-cart-shopping-fast text-xl"></i>
+            <i class="fi fi-tr-cart-shopping-fast text-xl text-[#737373]"></i>
           </button>
 
           <!-- book consult button -->
-          <button class="btn p-7 shadow-none rounded-4xl bg-[#ABEF5F]">Book Consult
-            <a
-              class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center flex-col justify-center">
+
+          <a href=""
+            class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-1  w-[185px] h-[56px] hover:bg-[#a7d675] ">
+            Book Consult
+            <span
+              class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
                 height="16">
                 <path fill="#FFFFFF"
                   d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
               </svg>
-            </a>
-          </button>
+            </span>
+          </a>
 
         </div>
       </div>
