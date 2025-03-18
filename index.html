@@ -14,6 +14,7 @@
   <!-- flatIcon -->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
   <style>
     .manrope {
       font-family: "Manrope", sans-serif;
@@ -24,12 +25,12 @@
   </style>
 </head>
 
-<body class="manrope">
+<body class="manrope pr-2 pl-2 lg:pr-0 lg:pl-0">
   <header class="container m-auto">
     <nav>
       <!-- Mobile MENU-->
       <!-- Note: just remove the "flex-row-reverse" to rotate the menu-->
-      <div class="dropdown flex  flex-row-reverse items-center md:mt-4 lg:hidden pl-3 mt-3">
+      <div class="dropdown flex  flex-row-reverse items-center md:mt-4 lg:hidden  mt-3">
 
         <div tabindex="0" role="button" class="btn btn-circle h-12 w-12">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,9 +155,96 @@
       </div>
 
     </nav>
-  </header>
-  <main>
+    <!-- hero Section -->
+    <section class="flex flex-col items-center space-y-4">
+      <div>
+        <img src="/assets/banner.png" alt="" srcset="">
+      </div>
+      <div class="max-w-[1084.28px]">
+        <h1 class="text-center lg:text-[64px] md:text-[36px] text-[32px] font-extrabold">A barn house of this design has
+          a striking appearance</h1>
+      </div>
+      <div class="max-w-[972.82px] md:w-[566px]">
+        <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,
+          featuring weathered wood,
+          sleek metal accents, and large windows that flood the space with natural light.</p>
+      </div>
+      <div>
+        <a href=""
+          class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-1  w-[185px] h-[56px] hover:bg-[#a7d675] ">
+          Book Consult
+          <span
+            class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
+              height="16">
+              <path fill="#FFFFFF"
+                d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
+            </svg>
+          </span>
+        </a>
+      </div>
 
+    </section>
+  </header>
+  <main class=" bg-[#f4f4f4]">
+    <!-- About Us -->
+
+    <section class="container m-auto mt-10">
+
+      <div class="flex lg:flex-row flex-col justify-between  gap-5">
+        <!-- text div -->
+        <div class="space-y-3 lg:w-1/2">
+          <!--  -->
+          <div class="flex lg:justify-start justify-center">
+            <img class=" absolute hidden lg:inline  ml-[-40px] mt-10" src="/assets/Vector.png" alt="">
+            <div
+              class="bg-white relative inline-block rounded-2xl gap-2 pt-2 pb-2  pr-3 pl-3 text-[20px] font-bold text-[#494949] lg:mt-25 mt-10 ">
+              <div class="flex gap-3 items-center justify-center">
+                <div class="mt-1 text-[#494949]">
+                  <i class="fi fi-br-arrow-right "> </i>
+                </div>
+                <div class="text-[#494949]">
+                  <p>About Us</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <h1 class="lg:text-[40px] md:text-[36px] text-[28px] font-extrabold lg:w-[477.3px] lg:text-start text-center">We design thoughtful, liveable spaces</h1>
+          <p class="lg:w-[559.95px] lg:text-start text-center">
+            The barn house captivates with its blend of rustic charm and
+            modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <div class="flex lg:flex-col flex-col   gap-5">
+            <div class="flex items-center bg-white p-9 pr-[250px] rounded-xl gap-8">
+              <div>
+                <img src="/assets/commercial.png" alt="">
+              </div>
+              <div class="lg:w-[308px]">
+                <h3 class="text-[20px] text-[#494949] font-extrabold">Commercial</h3>
+               <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p> 
+              </div>
+
+            </div>
+            <div class="flex items-center bg-white p-9 pr-[250px] rounded-xl gap-8">
+              <div>
+                <img src="/assets/commercial.png" alt="">
+              </div>
+              <div class="lg:w-[308px]">
+                <h3 class="text-[20px] text-[#494949] font-extrabold">Commercial</h3>
+               <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- image div -->
+        <div class="lg:w-1/2">
+          <img src="/assets/Rectangle.png" alt="" class="w-full h-[560px] mt-29">
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer>
 
