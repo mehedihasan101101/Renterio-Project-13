@@ -39,7 +39,7 @@
           </svg>
         </div>
         <!-- i have not used flex inside li because it takes all li center but li does not take full width -->
-        <ul tabindex="0" class="menu bg enu-sm dropdown-content rounded-box z-1  w-full p-2 shadow mt-42 mt-[260px] ">
+        <ul tabindex="0" class="menu bg-white/55 enu-sm dropdown-content rounded-box z-1  w-full p-2 shadow mt-72 ">
           <!-- in li w-full and inside "a" display block has been to make li take full width and text comes to center -->
           <li class="w-full">
             <a class="text-center block">Home</a>
@@ -631,30 +631,35 @@
             and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           <div class="w-full md:space-y-7 space-y-3">
             <div class="flex md:flex-row flex-col md:gap-7 gap-3">
-              <input type="text" placeholder="First Name*" class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
-              <input type="text" placeholder="Last Name*" class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
-            </div> 
+              <input type="text" placeholder="First Name*"
+                class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
+              <input type="text" placeholder="Last Name*"
+                class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
+            </div>
             <div class="flex md:flex-row flex-col md:gap-7 gap-3">
-              <input type="text" placeholder="Phone Number*" class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
-              <input type="text" placeholder="Email Address*" class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
-            </div> 
-           <div class="">
-            <textarea class="textarea w-full input  rounded-2xl h-[300px]  text-[#A0A0A0] text-[16px] font-medium" placeholder="Write your message here"></textarea>
-           </div>
+              <input type="text" placeholder="Phone Number*"
+                class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
+              <input type="text" placeholder="Email Address*"
+                class="input w-full rounded-4xl p-7 text-[#A0A0A0] text-[16px] font-medium" />
+            </div>
+            <div class="">
+              <textarea class="textarea w-full input  rounded-2xl h-[300px]  text-[#A0A0A0] text-[16px] font-medium"
+                placeholder="Write your message here"></textarea>
+            </div>
           </div>
           <div class="w-full">
-                      <a href=""
-            class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-3    h-[56px] hover:bg-[#a7d675] w-full text-[20px] font-extrabold">
-            Book Consult
-            <span
-              class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
-                height="16">
-                <path fill="#FFFFFF"
-                  d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
-              </svg>
-            </span>
-          </a>
+            <a href=""
+              class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-3    h-[56px] hover:bg-[#a7d675] w-full text-[20px] font-extrabold">
+              Book Consult
+              <span
+                class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
+                  height="16">
+                  <path fill="#FFFFFF"
+                    d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
+                </svg>
+              </span>
+            </a>
           </div>
 
         </div>
@@ -665,7 +670,56 @@
 
     </section>
   </main>
-  <footer>
+  <footer class="bg-[#1C1C1C]">
+    <section class="container m-auto flex flex-col items-center">
+      <div class="flex flex-col items-center mt-10 space-y-7">
+        <div class="flex items-center gap-2">
+          <a
+            class="  btn-circle bg-[#ABEF5F] drop-shadow-none  border-0 w-[38px] h-[38px] flex items-center flex-col justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
+              height="16">
+              <path
+                d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
+            </svg>
+          </a>
+
+          <a class="text-xl  text-[40px] font-xl pl-0 font-extrabold text-[#E9E9E9]">
+            Rinterio</a>
+        </div>
+        <div>
+          <p class="text-[#737373] text-[16px] lg:w-[678.26px] text-center">The barn house captivates with its blend of
+            rustic charm
+            and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class=" ">
+          <ul class="  px-1 text-[16px] font-medium flex text-[#E9E9E9] md:flex-row flex-col  justify-between md:gap-25 gap-10 items-center ">
+            <li><a class="hover:text-[#737373]">Home</a></li>
+            <li><a class="hover:text-[#737373]">Services</a></li>
+            <li><a class="hover:text-[#737373]">Portfolio</a></li>
+            <li><a class="hover:text-[#737373]">Blogs</a></li>
+            <li><a class="hover:text-[#737373]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="mt-5 pb-8">
+          <a href=""
+            class=" shadow-none rounded-4xl bg-[#ABEF5F] flex  justify-center items-center gap-1  w-[185px] h-[56px] hover:bg-[#a7d675] ">
+            Book Consult
+            <span
+              class="  btn-circle bg-[#1C1C1C] rop-shadow-none  border-0 w-[38px] h-[38px] flex items-center  justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16"
+                height="16">
+                <path fill="#FFFFFF"
+                  d="M19.5,0H10.5c-.828,0-1.5,.671-1.5,1.5s.672,1.5,1.5,1.5h8.379L.439,21.439c-.586,.585-.586,1.536,0,2.121,.293,.293,.677,.439,1.061,.439s.768-.146,1.061-.439L21,5.121V13.5c0,.829,.672,1.5,1.5,1.5s1.5-.671,1.5-1.5V4.5c0-2.481-2.019-4.5-4.5-4.5Z" />
+              </svg>
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </section>
 
 
   </footer>
