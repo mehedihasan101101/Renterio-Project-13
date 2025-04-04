@@ -1,4 +1,4 @@
-**Link:**https://mehedihasan101101.github.io/Renterio-Project-13/
+**Live Lik:**
 # Rinterio Website
 
 Rinterio is a modern, responsive website designed to showcase a barn house design with a blend of rustic charm and modern sophistication. The project is built using **HTML**, **CSS**, **Tailwind CSS**, and **DaisyUI** for styling and layout.
